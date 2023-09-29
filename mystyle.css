@@ -29,9 +29,18 @@ h5{
 }
 
 img {
+	display:block;
+	margin-left:220px;
+	margin-right:220px;
 	border-radius: 50%;
 	width: 100px;
 	height:149px;
+	text-align:center;
+}
+
+#name{
+	margin-left:210px;
+	margin-right:210px;
 }
 
 #menu{
@@ -50,7 +59,7 @@ img {
 #main {
   padding-bottom: 2.5rem;
   padding-left:30%;
-  width:60%;
+  width:65%;
   text-align: justify;
   background-color: #0EA6D8;
   color: white;
