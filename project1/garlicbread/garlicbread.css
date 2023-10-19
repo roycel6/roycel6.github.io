@@ -1,0 +1,40 @@
+body{
+  background-color:rgba(57, 41, 27, 1);
+}
+/*div*/
+.main-img-div{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  margin:auto;
+  width:80%;
+  height:90%;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+/*Images & Shapes*/
+#gb-main-img{
+  display:block;
+  margin:auto;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+#square{
+  height:600px;
+  width:480px;
+  position:absolute;
+  background-color:rgba(0, 0, 0, 0.5);
+  margin-left:800px;
+  font-size:80px;
+  color:white;
+  text-align:left;
+  padding:50px;
+  padding-top:80px;
+  padding-bottom:80px;
+  line-height:0.1;
+}
