@@ -14,7 +14,7 @@ body {
   height: 50vw;
   width: 80vw;
   stroke-dasharray: 1601;
-  animation: 3s fillSvg linear;
+  animation: 5s fillSvg linear;
 }
 
 @keyframes fillSvg {
