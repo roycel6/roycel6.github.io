@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: Taken_by_Vultures_Demo;
-  src: url("Taken_by_Vultures_Demo.otf");
-}
-
 header {
   position: relative;
   left: 0;
@@ -103,14 +98,21 @@ h5 {
   color: black;
 }
 
-img {
+/* img {
   display: block;
   margin-left: 220px;
   margin-right: 220px;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   width: 100px;
   height: 149px;
   text-align: center;
+} */
+
+.project img{
+  height: auto; 
+  width: auto; 
+  max-width: 400px; 
+  max-height: 400px;
 }
 
 #name {
