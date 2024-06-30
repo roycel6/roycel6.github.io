@@ -41,3 +41,50 @@ window.addEventListener("DOMContentLoaded", () => {
 function show() {
   document.querySelector("#menu").classList.toggle("active");
 }
+
+// image slides
+// var slideshow1 = document.querySelector("#slideshow1");
+// slideshow1.currentSlideIndex = 1;
+// showImg(slideshow1.currentSlideIndex, slideshow1);
+
+// var slideshow2 = document.querySelector("#slideshow2");
+// slideshow2.currentSlideIndex = 1;
+// showImg(slideshow2.currentSlideIndex, slideshow2);
+
+var slideshow3 = document.querySelector("#slideshow3");
+slideshow3.currentSlideIndex = 1;
+showImg(slideshow3.currentSlideIndex, slideshow3);
+
+// var slideshow4 = document.querySelector("#slideshow4");
+// slideshow4.currentSlideIndex = 1;
+// showImg(slideshow4.currentSlideIndex, slideshow4);
+
+//buttons at bottom
+function btm_slide(e, slideshow) {
+  showImg((slideshow.currentSlideIndex = e), slideshow);
+}
+
+//arrow buttons
+function side_slide(e, slideshow) {
+  showImg((slideshow.currentSlideIndex += e), slideshow);
+}
+
+function showImg(e, slideshow) {
+  var i;
+  const img = slideshow.querySelectorAll("img");
+  const sliders = slideshow.querySelectorAll(".btm-sliders span");
+  if (e > img.length) {
+    slideshow3.currentSlideIndex = 1;
+  }
+  if (e < 1) {
+    slideshow.currentSlideIndex = img.length;
+  }
+  for (i = 0; i < img.length; i++) {
+    img[i].style.display = "none";
+  }
+  for (i = 0; i < sliders.length; i++) {
+    sliders[i].style.background = "#bbb";
+  }
+  img[slideshow.currentSlideIndex - 1].style.display = "block";
+  sliders[slideshow.currentSlideIndex - 1].style.background = "#717171";
+}

@@ -7,6 +7,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script> -->
     <meta charset="UTF-8" />
   </head>
 
@@ -119,7 +123,15 @@
 
         <h2>A Sample of My Works</h2>
         <div class="project">
-          <img src="./app_ss/study_buddy_chat.png" alt="Study Buddy Chat">
+          <div class="images">
+            <img src="./app_ss/study_buddy_title.png" alt="Study Buddy Title" />
+            <img src="./app_ss/study_buddy_chat.png" alt="Study Buddy Chat" />
+            <img
+              src="./app_ss/study_buddy_friends.png"
+              alt="Study Buddy Friends"
+            />
+          </div>
+
           <h3><a href="">Study Buddies</a></h3>
           <p>
             Study Buddies is a chat app that is specifically designed for
@@ -138,30 +150,74 @@
         </div>
 
         <div class="project">
-          <img src="./app_ss/jeopardy_gameboard.png" alt="Jeopardy Gameboard">
+          <div class="images">
+            <img
+              src="./app_ss/jeopardy_gameboard.png"
+              alt="Jeopardy Gameboard"
+            />
+            <img src="./app_ss/jeopardy_question.png" alt="Jeopardy Question" />
+            <img
+              src="./app_ss/jeopardy_leaderboard_new.png"
+              alt="Jeopardy Leaderboard"
+            />
+          </div>
+
           <h3><a href="">Jeopardy Game</a></h3>
           <p>
             This is a simple single-player Jeopardy Game. The rules are similar
             to the show, but the game is in a multiple-choice format. <br />For
             this project, I created a function to store users' scores in a text
-            file, developed the leaderboard page, and implemented a restart game function. (HTML, CSS,
-            PHP)
+            file, developed the leaderboard page, and implemented a restart game
+            function. (HTML, CSS, PHP)
           </p>
         </div>
 
         <div class="project">
-          <img src="./app_ss/comp_home_welcome.png" alt="Real Estate Welcome">
+          <div id="slideshow3" class="slideshow-container">
+            <div class="images">
+              <img
+                src="./app_ss/comp_home_welcome.png"
+                alt="Real Estate Welcome"
+              />
+              <img src="./app_ss/comp_home_login.PNG" alt="Real Estate Login" />
+              <img
+                src="./app_ss/comp_home_search.PNG"
+                alt="Real Estate Search"
+              />
+            </div>
+            <div class="slide left" onclick="side_slide(-1, slideshow3)">
+              <span class="fa fa-angle-left"></span>
+            </div>
+            <div class="slide right" onclick="side_slide(1, slideshow3)">
+              <span class="fa fa-angle-right"></span>
+            </div>
+            <div class="btm-sliders">
+              <span onclick="btm_slide(1, slideshow3)"></span>
+              <span onclick="btm_slide(2, slideshow3)"></span>
+              <span onclick="btm_slide(3, slideshow3)"></span>
+            </div>
+          </div>
+
           <h3><a href="">Real Estate Website</a></h3>
           <p>
             This website displays homes for sale and allows users to search for
             different homes.<br />
-            For this project, I helped develop the login page, developed the logout function,
-           implemented sessions and cookies, and helped fix bugs throughout the site. (HTML, CSS, PHP, React.js, MySQL)
+            For this project, I helped develop the login page, developed the
+            logout function, implemented sessions and cookies, and helped fix
+            bugs throughout the site. (HTML, CSS, PHP, React.js, MySQL)
           </p>
         </div>
 
         <div class="project">
-          <img src="./app_ss/art_display_home.png" alt="ArtDisplay Home">
+          <div class="images">
+            <img src="./app_ss/art_display_home.png" alt="ArtDisplay Home" />
+            <img
+              src="./app_ss/art_display_profile.png"
+              alt="ArtDisplay Profile"
+            />
+            <img src="./app_ss/art_display_dm.png" alt="ArtDisplay DM" />
+          </div>
+
           <h3><a href="">ArtDisplay</a></h3>
           <p>
             ArtDisplay is a social media app similar to Instagram that is
