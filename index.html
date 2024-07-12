@@ -7,10 +7,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
   </head>
 
@@ -123,51 +123,95 @@
 
         <h2>A Sample of My Works</h2>
         <div class="project">
-          <div class="images">
-            <img src="./app_ss/study_buddy_title.png" alt="Study Buddy Title" />
-            <img src="./app_ss/study_buddy_chat.png" alt="Study Buddy Chat" />
-            <img
-              src="./app_ss/study_buddy_friends.png"
-              alt="Study Buddy Friends"
-            />
+          <div id="slideshow1" class="slideshow-container">
+            <div class="images">
+              <img
+                src="./app_ss/study_buddy_title.png"
+                alt="Study Buddy Title"
+              />
+              <img src="./app_ss/study_buddy_chat.png" alt="Study Buddy Chat" />
+              <img
+                src="./app_ss/study_buddy_friends.png"
+                alt="Study Buddy Friends"
+              />
+            </div>
+            <div class="slide left" onclick="side_slide(-1, slideshow1)">
+              <span class="fa fa-angle-left"></span>
+            </div>
+            <div class="slide right" onclick="side_slide(1, slideshow1)">
+              <span class="fa fa-angle-right"></span>
+            </div>
+            <div class="btm-sliders">
+              <span onclick="btm_slide(1, slideshow1)"></span>
+              <span onclick="btm_slide(2, slideshow1)"></span>
+              <span onclick="btm_slide(3, slideshow1)"></span>
+            </div>
           </div>
 
-          <h3><a href="">Study Buddies</a></h3>
+          <h3>
+            <a
+              href="https://github.com/CSC-4350-SP2024/Team9"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Study Buddies</a
+            >
+          </h3>
           <p>
             Study Buddies is a chat app that is specifically designed for
             students. Students can register and choose classes they are enrolled
-            in.<br />
-            They are added to group chats that correspond to each class. In
-            addition, students can send friend requests to other users; <br />
-            friends are suggested based on common classes. Once friend requests
-            are accepted, additional contact information is shared<br />
-            between users, such as phone number and Discord username. My role
-            included helping style and develop the front-end<br />
-            for several pages including the friend and chat pages, and working
-            on the back-end for these pages. (React.js, Node.js, Tailwind CSS,
-            MySQL)
+            in. They are added to group chats that correspond to each class. In
+            addition, students can send friend requests to other users; friends
+            are suggested based on common classes. Once friend requests are
+            accepted, additional contact information is shared between users,
+            such as phone number and Discord username. My role included helping
+            style and develop the front-end for several pages including the
+            friend and chat pages, and working on the back-end for these pages.
+            (React.js, Node.js, Tailwind CSS, MySQL)
           </p>
         </div>
 
         <div class="project">
-          <div class="images">
-            <img
-              src="./app_ss/jeopardy_gameboard.png"
-              alt="Jeopardy Gameboard"
-            />
-            <img src="./app_ss/jeopardy_question.png" alt="Jeopardy Question" />
-            <img
-              src="./app_ss/jeopardy_leaderboard_new.png"
-              alt="Jeopardy Leaderboard"
-            />
+          <div id="slideshow2" class="slideshow-container">
+            <div class="images">
+              <img
+                src="./app_ss/jeopardy_gameboard.png"
+                alt="Jeopardy Gameboard"
+              />
+              <img
+                src="./app_ss/jeopardy_question.png"
+                alt="Jeopardy Question"
+              />
+              <img
+                src="./app_ss/jeopardy_leaderboard_new.png"
+                alt="Jeopardy Leaderboard"
+              />
+            </div>
+            <div class="slide left" onclick="side_slide(-1, slideshow2)">
+              <span class="fa fa-angle-left"></span>
+            </div>
+            <div class="slide right" onclick="side_slide(1, slideshow2)">
+              <span class="fa fa-angle-right"></span>
+            </div>
+            <div class="btm-sliders">
+              <span onclick="btm_slide(1, slideshow2)"></span>
+              <span onclick="btm_slide(2, slideshow2)"></span>
+              <span onclick="btm_slide(3, slideshow2)"></span>
+            </div>
           </div>
 
-          <h3><a href="">Jeopardy Game</a></h3>
+          <h3>
+            <a
+              href="https://github.com/AAdams109/Jeopardy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Jeopardy Game</a
+            >
+          </h3>
           <p>
             This is a simple single-player Jeopardy Game. The rules are similar
-            to the show, but the game is in a multiple-choice format. <br />For
-            this project, I created a function to store users' scores in a text
-            file, developed the leaderboard page, and implemented a restart game
+            to the show, but the game is in a multiple-choice format. For this
+            project, I created a function to store users' scores in a text file,
+            developed the leaderboard page, and implemented a restart game
             function. (HTML, CSS, PHP)
           </p>
         </div>
@@ -198,49 +242,74 @@
             </div>
           </div>
 
-          <h3><a href="">Real Estate Website</a></h3>
+          <h3>
+            <a
+              href="https://github.com/Dooroomi0307/Project4"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Real Estate Website</a
+            >
+          </h3>
           <p>
             This website displays homes for sale and allows users to search for
-            different homes.<br />
-            For this project, I helped develop the login page, developed the
-            logout function, implemented sessions and cookies, and helped fix
-            bugs throughout the site. (HTML, CSS, PHP, React.js, MySQL)
+            different homes. For this project, I helped develop the login page,
+            developed the logout function, implemented sessions and cookies, and
+            helped fix bugs throughout the site. (HTML, CSS, PHP, React.js,
+            MySQL)
           </p>
         </div>
 
         <div class="project">
-          <div class="images">
-            <img src="./app_ss/art_display_home.png" alt="ArtDisplay Home" />
-            <img
-              src="./app_ss/art_display_profile.png"
-              alt="ArtDisplay Profile"
-            />
-            <img src="./app_ss/art_display_dm.png" alt="ArtDisplay DM" />
+          <div id="slideshow4" class="slideshow-container">
+            <div id="phone-img" class="images">
+              <img src="./app_ss/art_display_home.png" alt="ArtDisplay Home" />
+              <img
+                src="./app_ss/art_display_profile.png"
+                alt="ArtDisplay Profile"
+              />
+              <img src="./app_ss/art_display_dm.png" alt="ArtDisplay DM" />
+            </div>
+            <div class="slide left" onclick="side_slide(-1, slideshow4)">
+              <span class="fa fa-angle-left"></span>
+            </div>
+            <div class="slide right" onclick="side_slide(1, slideshow4)">
+              <span class="fa fa-angle-right"></span>
+            </div>
+            <div class="btm-sliders">
+              <span onclick="btm_slide(1, slideshow4)"></span>
+              <span onclick="btm_slide(2, slideshow4)"></span>
+              <span onclick="btm_slide(3, slideshow4)"></span>
+            </div>
           </div>
 
-          <h3><a href="">ArtDisplay</a></h3>
+          <h3>
+            <a
+              href="https://github.com/roycel6/madProject2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ArtDisplay</a
+            >
+          </h3>
           <p>
             ArtDisplay is a social media app similar to Instagram that is
-            designed to allow artists to showcase their work. <br />Users can
-            post images of their work and add a caption. Other users can like
-            the post and leave a comment.<br />
-            In addition, users can privately message each other if they want to
-            work with an artist or just discuss art. My role<br />
-            included developing and styling the front-end for the home page,
-            each post, and the chat rooms,<br />
-            as well as developing the back-end for the entire app. (Flutter,
-            Firebase)
+            designed to allow artists to showcase their work. Users can post
+            images of their work and add a caption. Other users can like the
+            post and leave a comment. In addition, users can privately message
+            each other if they want to work with an artist or just discuss art.
+            My role included developing and styling the front-end for the home
+            page, each post, and the chat rooms, as well as developing the
+            back-end for the entire app. (Flutter, Firebase)
           </p>
         </div>
       </div>
 
       <footer id="contact_info">
-        <!-- <h3 class="contact_header"><a name="contact_info">Contact Me</a></h3> -->
-        <!-- <a name="contact_info"> -->
         <ul>
           <li>
             <a
-              href="https://www.linkedin.com/in/royce-lim-a5248a265"
+              href="https://www.linkedin.com/in/royce-l-a5248a265"
+              target="_blank"
+              rel="noopener noreferrer"
               class="linkedin"
             >
               <span></span>
@@ -251,7 +320,12 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/roycel6" class="github">
+            <a
+              href="https://github.com/roycel6"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github"
+            >
               <span></span>
               <span></span>
               <span></span>
@@ -260,7 +334,12 @@
             </a>
           </li>
           <li>
-            <a href="mailto:rj.lim3000@gmail.com" class="email">
+            <a
+              href="mailto:rj.lim3000@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="email"
+            >
               <span></span>
               <span></span>
               <span></span>
@@ -269,7 +348,6 @@
             </a>
           </li>
         </ul>
-        <!-- </a> -->
         <h5>"Another Day, Another Opportunity" -Trae Young</h5>
       </footer>
     </div>

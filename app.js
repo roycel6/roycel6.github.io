@@ -43,21 +43,21 @@ function show() {
 }
 
 // image slides
-// var slideshow1 = document.querySelector("#slideshow1");
-// slideshow1.currentSlideIndex = 1;
-// showImg(slideshow1.currentSlideIndex, slideshow1);
+var slideshow1 = document.querySelector("#slideshow1");
+slideshow1.currentSlideIndex = 1;
+showImg(slideshow1.currentSlideIndex, slideshow1);
 
-// var slideshow2 = document.querySelector("#slideshow2");
-// slideshow2.currentSlideIndex = 1;
-// showImg(slideshow2.currentSlideIndex, slideshow2);
+var slideshow2 = document.querySelector("#slideshow2");
+slideshow2.currentSlideIndex = 1;
+showImg(slideshow2.currentSlideIndex, slideshow2);
 
 var slideshow3 = document.querySelector("#slideshow3");
 slideshow3.currentSlideIndex = 1;
 showImg(slideshow3.currentSlideIndex, slideshow3);
 
-// var slideshow4 = document.querySelector("#slideshow4");
-// slideshow4.currentSlideIndex = 1;
-// showImg(slideshow4.currentSlideIndex, slideshow4);
+var slideshow4 = document.querySelector("#slideshow4");
+slideshow4.currentSlideIndex = 1;
+showImg(slideshow4.currentSlideIndex, slideshow4);
 
 //buttons at bottom
 function btm_slide(e, slideshow) {
@@ -74,7 +74,7 @@ function showImg(e, slideshow) {
   const img = slideshow.querySelectorAll("img");
   const sliders = slideshow.querySelectorAll(".btm-sliders span");
   if (e > img.length) {
-    slideshow3.currentSlideIndex = 1;
+    slideshow.currentSlideIndex = 1;
   }
   if (e < 1) {
     slideshow.currentSlideIndex = img.length;
